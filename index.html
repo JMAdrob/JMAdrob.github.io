@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="imagen de cv"  />
+    <meta property="og:description" content="CV Aleatorio" />
+    <meta property="og:image" content="imagen de cv" />
+    <title class="name">CV</title>
+  </head>
+  <body>
+    <main class="slides">
+      <section class="slide">
+        <article class="slide-container">
+          <div id="home" class="main-data">
+            <section class="dni dni-front">
+              <img
+                src=""
+                alt="foto de una persona fachera facherita"
+                class="photo"
+              />
+              <p class="name">Nombre y apellido</p>
+              <p><span class="age"></span> años</p>
+              <p class="nationality">Pais y provincia</p>
+              <p class="about-me">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Distinctio recusandae enim aliquid sunt natus similique. Illo
+                quasi alias, doloribus libero natus eum esse! Rerum voluptas
+                ratione non, nam maiores quia?
+              </p>
+              <a href="#xp" class="xp">Experiencia</a>
+              <a href="#contact" class="contact">Contacto</a>
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide">
+        <article class="slide-container">
+          <div id="xp" class="xp">
+            <p>aca pondrai mi experiencia programando</p>
+            <img
+              src="https://pbs.twimg.com/media/DycS_Y2WwAEj-fv.jpg"
+              alt="aqui pondria mi experiencia programando, si tuviera!!!"
+            />
+            <p>si tuviera alguna!!!</p>
+          </div>
+          <a class="up" href="#home">Inicio</a>
+        </article>
+      </section>
+
+      <section class="slide">
+        <article class="slide-container">
+          <form id="contact" class="contact-form" action="" method="POST">
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              title="Nombre solo acepta letras y espacion en blanco"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+              title="Formato de mail invalido"
+              required
+            />
+            <textarea
+              name="comentario"
+              placeholder="Decime en que te puedo ayudar"
+              id=""
+              cols="30"
+              rows="10"
+              requiered
+            ></textarea>
+            <input type="submit" value="Enviar"/>
+          </form>
+          <a class="up" href="#home">Inicio</a>
+        </article>
+      </section>
+    </main>
+
+    <script src="scypt.js"></script>
+  </body>
+</html>
